@@ -1,0 +1,287 @@
+[
+    {
+        "_id": "6765432d157fdab37fbadf6d",
+        "name": "Air Conditioner",
+        "supplier_product_code": "1851053678710",
+        "price_without_vat": 72.01,
+        "price_with_vat": 89.53,
+        "shipping_cost": 11.3,
+        "discount_date_range": {
+            "start_date": "2024-06-04",
+            "end_date": "2024-06-30"
+        },
+        "dimensions": {
+            "length": 36,
+            "width": 44,
+            "height": 17
+        },
+        "weight": 30.13,
+        "suppliers": "Armstrong Ltd"
+    },
+    {
+        "_id": "6765432d157fdab37fbadf6e",
+        "name": "Air Conditioner",
+        "supplier_product_code": "8929280349642",
+        "price_without_vat": 68.46,
+        "price_with_vat": 90.55,
+        "shipping_cost": 19.99,
+        "discount_date_range": {
+            "start_date": "2023-03-02",
+            "end_date": "2025-07-19"
+        },
+        "dimensions": {
+            "length": 15,
+            "width": 83,
+            "height": 37
+        },
+        "weight": 2.22,
+        "suppliers": "Fitzgerald, Franklin and Acosta"
+    },
+    {
+        "_id": "6765432d157fdab37fbadf6f",
+        "name": "Headphones",
+        "supplier_product_code": "9811966660433",
+        "price_without_vat": 66.28,
+        "price_with_vat": 85.47,
+        "shipping_cost": 19.95,
+        "discount_date_range": {
+            "start_date": "2024-02-19",
+            "end_date": "2024-02-23"
+        },
+        "dimensions": {
+            "length": 80,
+            "width": 2,
+            "height": 43
+        },
+        "weight": 48.4,
+        "suppliers": "Sanchez-Lang"
+    },
+    {
+        "_id": "6765432d157fdab37fbadf70",
+        "name": "Monitor",
+        "supplier_product_code": "7089484854715",
+        "price_without_vat": 41.24,
+        "price_with_vat": 53.8,
+        "shipping_cost": 13.11,
+        "discount_date_range": {
+            "start_date": "2024-07-25",
+            "end_date": "2024-05-31"
+        },
+        "dimensions": {
+            "length": 73,
+            "width": 96,
+            "height": 8
+        },
+        "weight": 36.87,
+        "suppliers": "Bowen Group"
+    },
+    {
+        "_id": "6765432d157fdab37fbadf71",
+        "name": "Washing Machine",
+        "supplier_product_code": "0071562531912",
+        "price_without_vat": 72.19,
+        "price_with_vat": 90.31,
+        "shipping_cost": 18.0,
+        "discount_date_range": {
+            "start_date": "2024-09-09",
+            "end_date": "2024-09-07"
+        },
+        "dimensions": {
+            "length": 61,
+            "width": 26,
+            "height": 30
+        },
+        "weight": 48.51,
+        "suppliers": "Harrison LLC"
+    },
+    {
+        "_id": "6765432d157fdab37fbadf72",
+        "name": "Camera",
+        "supplier_product_code": "9891732825952",
+        "price_without_vat": 60.14,
+        "price_with_vat": 74.05,
+        "shipping_cost": 13.86,
+        "discount_date_range": {
+            "start_date": "2024-01-29",
+            "end_date": "2024-06-13"
+        },
+        "dimensions": {
+            "length": 4,
+            "width": 28,
+            "height": 16
+        },
+        "weight": 49.55,
+        "suppliers": "Fleming and Sons"
+    },
+    {
+        "_id": "6765432d157fdab37fbadf73",
+        "name": "Router",
+        "supplier_product_code": "9588039536390",
+        "price_without_vat": 14.76,
+        "price_with_vat": 18.63,
+        "shipping_cost": 14.04,
+        "discount_date_range": {
+            "start_date": "2023-07-20",
+            "end_date": "2024-11-21"
+        },
+        "dimensions": {
+            "length": 75,
+            "width": 65,
+            "height": 76
+        },
+        "weight": 17.04,
+        "suppliers": "Howe Group"
+    },
+    {
+        "_id": "6765432d157fdab37fbadf74",
+        "name": "Router",
+        "supplier_product_code": "4856305028401",
+        "price_without_vat": 89.52,
+        "price_with_vat": 124.83,
+        "shipping_cost": 5.51,
+        "discount_date_range": {
+            "start_date": "2023-04-27",
+            "end_date": "2024-07-20"
+        },
+        "dimensions": {
+            "length": 23,
+            "width": 90,
+            "height": 83
+        },
+        "weight": 26.61,
+        "suppliers": "Riggs PLC"
+    },
+    {
+        "_id": "6765432d157fdab37fbadf75",
+        "name": "Smart Speaker",
+        "supplier_product_code": "2859812843620",
+        "price_without_vat": 91.13,
+        "price_with_vat": 124.4,
+        "shipping_cost": 10.86,
+        "discount_date_range": {
+            "start_date": "2024-05-19",
+            "end_date": "2024-11-27"
+        },
+        "dimensions": {
+            "length": 47,
+            "width": 39,
+            "height": 56
+        },
+        "weight": 38.5,
+        "suppliers": "Rodgers-Parrish"
+    },
+    {
+        "_id": "6765432d157fdab37fbadf76",
+        "name": "Washing Machine",
+        "supplier_product_code": "3774925052105",
+        "price_without_vat": 70.49,
+        "price_with_vat": 98.06,
+        "shipping_cost": 5.89,
+        "discount_date_range": {
+            "start_date": "2024-01-29",
+            "end_date": "2024-07-17"
+        },
+        "dimensions": {
+            "length": 58,
+            "width": 4,
+            "height": 45
+        },
+        "weight": 9.81,
+        "suppliers": "Richard, Ware and Duncan"
+    },
+    {
+        "_id": "6765432d157fdab37fbadf77",
+        "name": "Printer",
+        "supplier_product_code": "2143826561800",
+        "price_without_vat": 92.44,
+        "price_with_vat": 127.66,
+        "shipping_cost": 15.91,
+        "discount_date_range": {
+            "start_date": "2024-02-25",
+            "end_date": "2025-06-15"
+        },
+        "dimensions": {
+            "length": 34,
+            "width": 11,
+            "height": 31
+        },
+        "weight": 15.04,
+        "suppliers": "Jensen-Dyer"
+    },
+    {
+        "_id": "6765432d157fdab37fbadf78",
+        "name": "Washing Machine",
+        "supplier_product_code": "1665699907383",
+        "price_without_vat": 51.95,
+        "price_with_vat": 70.33,
+        "shipping_cost": 8.02,
+        "discount_date_range": {
+            "start_date": "2023-04-17",
+            "end_date": "2025-07-19"
+        },
+        "dimensions": {
+            "length": 13,
+            "width": 87,
+            "height": 28
+        },
+        "weight": 26.7,
+        "suppliers": "Johnson-Young"
+    },
+    {
+        "_id": "6765432d157fdab37fbadf79",
+        "name": "Washing Machine",
+        "supplier_product_code": "8555338224380",
+        "price_without_vat": 86.48,
+        "price_with_vat": 120.77,
+        "shipping_cost": 10.58,
+        "discount_date_range": {
+            "start_date": "2024-05-10",
+            "end_date": "2023-12-03"
+        },
+        "dimensions": {
+            "length": 90,
+            "width": 27,
+            "height": 26
+        },
+        "weight": 14.59,
+        "suppliers": "Lowe, Young and Russo"
+    },
+    {
+        "_id": "6765432d157fdab37fbadf7a",
+        "name": "Headphones",
+        "supplier_product_code": "0358983375463",
+        "price_without_vat": 59.08,
+        "price_with_vat": 78.02,
+        "shipping_cost": 8.99,
+        "discount_date_range": {
+            "start_date": "2023-02-16",
+            "end_date": "2024-08-20"
+        },
+        "dimensions": {
+            "length": 21,
+            "width": 72,
+            "height": 64
+        },
+        "weight": 28.89,
+        "suppliers": "Barr Group"
+    },
+    {
+        "_id": "6765432d157fdab37fbadf7b",
+        "name": "Monitor",
+        "supplier_product_code": "4906638899015",
+        "price_without_vat": 40.46,
+        "price_with_vat": 52.7,
+        "shipping_cost": 16.3,
+        "discount_date_range": {
+            "start_date": "2024-07-07",
+            "end_date": "2023-06-02"
+        },
+        "dimensions": {
+            "length": 56,
+            "width": 1,
+            "height": 22
+        },
+        "weight": 42.23,
+        "suppliers": "Roberts, Murphy and Martinez"
+    }
+]

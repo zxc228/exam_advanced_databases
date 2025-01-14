@@ -1,0 +1,347 @@
+[
+    {
+        "_id": "67654304157fdab37fbadf5e",
+        "name": "Nancy Ramirez",
+        "billing_addresses": "Carrer de Mallorca, 401, 08013 Barcelona, Spain",
+        "coordinates_billing_adresses": {
+            "type": "Point",
+            "coordinates": [
+                2.174428,
+                41.403505
+            ]
+        },
+        "registration_date": "2023-03-11",
+        "shipping_addresses": "1101 4th St SW, Washington, DC 20024, USA",
+        "coordinates_shipping_adresses": {
+            "type": "Point",
+            "coordinates": [
+                -77.017878,
+                38.877907
+            ]
+        },
+        "payment_cards": "6537525857991850",
+        "last_access_date": "2024-02-25"
+    },
+    {
+        "_id": "67654306157fdab37fbadf5f",
+        "name": "Fernando Patel",
+        "billing_addresses": "Avenida de la Constituci\u00f3n, 3, 41004 Sevilla, Spain",
+        "coordinates_billing_adresses": {
+            "type": "Point",
+            "coordinates": [
+                -5.993033,
+                37.384711
+            ]
+        },
+        "registration_date": "2023-05-08",
+        "shipping_addresses": "Calle de Serrano, 13, 28001 Madrid, Spain",
+        "coordinates_shipping_adresses": {
+            "type": "Point",
+            "coordinates": [
+                -3.688889,
+                40.423429
+            ]
+        },
+        "payment_cards": "378066817510444",
+        "last_access_date": "2024-04-06"
+    },
+    {
+        "_id": "67654308157fdab37fbadf60",
+        "name": "Jessica Silva",
+        "billing_addresses": "United Nations Secretariat Building, 405 E 42nd St, New York, NY 10017, USA",
+        "coordinates_billing_adresses": {
+            "type": "Point",
+            "coordinates": [
+                -73.968084,
+                40.748946
+            ]
+        },
+        "registration_date": "2023-11-25",
+        "shipping_addresses": "Calle Mayor, 1, 28013 Madrid, Spain",
+        "coordinates_shipping_adresses": {
+            "type": "Point",
+            "coordinates": [
+                -3.70465,
+                40.416254
+            ]
+        },
+        "payment_cards": "6543969348885275",
+        "last_access_date": "2024-04-12"
+    },
+    {
+        "_id": "6765430a157fdab37fbadf61",
+        "name": "Joseph Reynolds",
+        "billing_addresses": "United Nations Secretariat Building, 405 E 42nd St, New York, NY 10017, USA",
+        "coordinates_billing_adresses": {
+            "type": "Point",
+            "coordinates": [
+                -73.968084,
+                40.748946
+            ]
+        },
+        "registration_date": "2023-11-22",
+        "shipping_addresses": "Gran Via, 28, 28013 Madrid, Spain",
+        "coordinates_shipping_adresses": {
+            "type": "Point",
+            "coordinates": [
+                -3.701957,
+                40.420193
+            ]
+        },
+        "payment_cards": "4573814702900",
+        "last_access_date": "2024-01-18"
+    },
+    {
+        "_id": "6765430c157fdab37fbadf62",
+        "name": "Julie Brown",
+        "billing_addresses": "Calle Mayor, 1, 28013 Madrid, Spain",
+        "coordinates_billing_adresses": {
+            "type": "Point",
+            "coordinates": [
+                -3.70465,
+                40.416254
+            ]
+        },
+        "registration_date": "2024-01-02",
+        "shipping_addresses": "Calle del Prado, 28014 Madrid, Spain",
+        "coordinates_shipping_adresses": {
+            "type": "Point",
+            "coordinates": [
+                -3.698255,
+                40.415007
+            ]
+        },
+        "payment_cards": "6584705551685212",
+        "last_access_date": "2024-03-30"
+    },
+    {
+        "_id": "67654310157fdab37fbadf63",
+        "name": "Robin Morrow",
+        "billing_addresses": "Avenida de la Constituci\u00f3n, 3, 41004 Sevilla, Spain",
+        "coordinates_billing_adresses": {
+            "type": "Point",
+            "coordinates": [
+                -5.993033,
+                37.384711
+            ]
+        },
+        "registration_date": "2024-09-07",
+        "shipping_addresses": "Carrer de Mallorca, 401, 08013 Barcelona, Spain",
+        "coordinates_shipping_adresses": {
+            "type": "Point",
+            "coordinates": [
+                2.174428,
+                41.403505
+            ]
+        },
+        "payment_cards": "4265667916560347672",
+        "last_access_date": "2025-06-23"
+    },
+    {
+        "_id": "67654312157fdab37fbadf64",
+        "name": "Thomas Morales",
+        "billing_addresses": "701 D St NW, Washington, DC 20024, USA",
+        "coordinates_billing_adresses": {
+            "type": "Point",
+            "coordinates": [
+                -77.022063,
+                38.894878
+            ]
+        },
+        "registration_date": "2023-09-25",
+        "shipping_addresses": "Pla\u00e7a de Sant Jaume, 1, 08002 Barcelona, Spain",
+        "coordinates_shipping_adresses": {
+            "type": "Point",
+            "coordinates": [
+                2.176941,
+                41.382186
+            ]
+        },
+        "payment_cards": "4549294067188937",
+        "last_access_date": "2024-04-23"
+    },
+    {
+        "_id": "67654317157fdab37fbadf65",
+        "name": "Anthony Walker",
+        "billing_addresses": "Paseo del Prado, 2, 28014 Madrid, Spain",
+        "coordinates_billing_adresses": {
+            "type": "Point",
+            "coordinates": [
+                -3.693554,
+                40.41653
+            ]
+        },
+        "registration_date": "2024-05-12",
+        "shipping_addresses": "Calle de Alcal\u00e1, 50, 28014 Madrid, Spain",
+        "coordinates_shipping_adresses": {
+            "type": "Point",
+            "coordinates": [
+                -3.690588,
+                40.419787
+            ]
+        },
+        "payment_cards": "6011454820286121",
+        "last_access_date": "2024-10-08"
+    },
+    {
+        "_id": "6765431a157fdab37fbadf66",
+        "name": "Jeff Walker",
+        "billing_addresses": "Carrer de Mallorca, 401, 08013 Barcelona, Spain",
+        "coordinates_billing_adresses": {
+            "type": "Point",
+            "coordinates": [
+                2.174428,
+                41.403505
+            ]
+        },
+        "registration_date": "2024-04-24",
+        "shipping_addresses": "20 W 34th St., New York, NY 10001, USA",
+        "coordinates_shipping_adresses": {
+            "type": "Point",
+            "coordinates": [
+                -73.985304,
+                40.748654
+            ]
+        },
+        "payment_cards": "676185047641",
+        "last_access_date": "2025-02-08"
+    },
+    {
+        "_id": "6765431e157fdab37fbadf67",
+        "name": "Jennifer Walker",
+        "billing_addresses": "Calle del Prado, 28014 Madrid, Spain",
+        "coordinates_billing_adresses": {
+            "type": "Point",
+            "coordinates": [
+                -3.698255,
+                40.415007
+            ]
+        },
+        "registration_date": "2024-07-17",
+        "shipping_addresses": "Paseo del Prado, 2, 28014 Madrid, Spain",
+        "coordinates_shipping_adresses": {
+            "type": "Point",
+            "coordinates": [
+                -3.693554,
+                40.41653
+            ]
+        },
+        "payment_cards": "213155276356917",
+        "last_access_date": "2025-03-31"
+    },
+    {
+        "_id": "67654321157fdab37fbadf68",
+        "name": "Marissa Rogers",
+        "billing_addresses": "3109 M St NW, Washington, DC 20007, USA",
+        "coordinates_billing_adresses": {
+            "type": "Point",
+            "coordinates": [
+                -77.061446,
+                38.905274
+            ]
+        },
+        "registration_date": "2023-10-07",
+        "shipping_addresses": "Calle del Prado, 28014 Madrid, Spain",
+        "coordinates_shipping_adresses": {
+            "type": "Point",
+            "coordinates": [
+                -3.698255,
+                40.415007
+            ]
+        },
+        "payment_cards": "3500628275945993",
+        "last_access_date": "2024-07-08"
+    },
+    {
+        "_id": "67654324157fdab37fbadf69",
+        "name": "Mary Jenkins",
+        "billing_addresses": "Calle del Prado, 28014 Madrid, Spain",
+        "coordinates_billing_adresses": {
+            "type": "Point",
+            "coordinates": [
+                -3.698255,
+                40.415007
+            ]
+        },
+        "registration_date": "2023-03-02",
+        "shipping_addresses": "Pla\u00e7a de Sant Jaume, 1, 08002 Barcelona, Spain",
+        "coordinates_shipping_adresses": {
+            "type": "Point",
+            "coordinates": [
+                2.176941,
+                41.382186
+            ]
+        },
+        "payment_cards": "6524434978391154",
+        "last_access_date": "2023-03-18"
+    },
+    {
+        "_id": "67654326157fdab37fbadf6a",
+        "name": "Alicia Lawrence",
+        "billing_addresses": "1101 4th St SW, Washington, DC 20024, USA",
+        "coordinates_billing_adresses": {
+            "type": "Point",
+            "coordinates": [
+                -77.017878,
+                38.877907
+            ]
+        },
+        "registration_date": "2023-07-18",
+        "shipping_addresses": "Calle del Prado, 28014 Madrid, Spain",
+        "coordinates_shipping_adresses": {
+            "type": "Point",
+            "coordinates": [
+                -3.698255,
+                40.415007
+            ]
+        },
+        "payment_cards": "348820596918658",
+        "last_access_date": "2024-03-24"
+    },
+    {
+        "_id": "6765432a157fdab37fbadf6b",
+        "name": "Holly Oliver",
+        "billing_addresses": "Calle de Alcal\u00e1, 50, 28014 Madrid, Spain",
+        "coordinates_billing_adresses": {
+            "type": "Point",
+            "coordinates": [
+                -3.690588,
+                40.419787
+            ]
+        },
+        "registration_date": "2024-10-08",
+        "shipping_addresses": "20 W 34th St., New York, NY 10001, USA",
+        "coordinates_shipping_adresses": {
+            "type": "Point",
+            "coordinates": [
+                -73.985304,
+                40.748654
+            ]
+        },
+        "payment_cards": "2275943738350565",
+        "last_access_date": "2025-03-26"
+    },
+    {
+        "_id": "6765432d157fdab37fbadf6c",
+        "name": "Ricardo Brooks",
+        "billing_addresses": "Paseo del Prado, 2, 28014 Madrid, Spain",
+        "coordinates_billing_adresses": {
+            "type": "Point",
+            "coordinates": [
+                -3.693554,
+                40.41653
+            ]
+        },
+        "registration_date": "2024-09-18",
+        "shipping_addresses": "3109 M St NW, Washington, DC 20007, USA",
+        "coordinates_shipping_adresses": {
+            "type": "Point",
+            "coordinates": [
+                -77.061446,
+                38.905274
+            ]
+        },
+        "payment_cards": "4208461090845627874",
+        "last_access_date": "2025-01-08"
+    }
+]

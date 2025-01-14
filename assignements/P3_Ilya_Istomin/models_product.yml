@@ -1,0 +1,44 @@
+Customer:
+  required_vars:
+    - name
+    - billing_addresses
+    - coordinates_billing_adresses
+    - registration_date
+    
+  admissible_vars:
+    - shipping_addresses
+    - coordinates_shipping_adresses
+    - payment_cards
+    - last_access_date
+    
+    
+
+Product:
+  required_vars:
+    - name
+    - supplier_product_code
+    - price_without_vat
+    - price_with_vat
+  admissible_vars:
+    - shipping_cost
+    - discount_date_range
+    - dimensions
+    - weight
+    - suppliers
+
+Purchase:
+  required_vars:
+    - products
+    - customer
+    - purchase_price
+    - purchase_date
+  admissible_vars:
+    - shipping_address
+    - shipping_coordinates
+
+Supplier:
+  required_vars:
+    - name
+  admissible_vars:
+    - warehouse_addresses
+    - warehouse_coordinates

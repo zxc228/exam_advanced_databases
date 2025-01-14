@@ -1,1 +1,6 @@
 .venv/
+summary.aux
+summary.fdb_latexmk
+summary.fls
+summary.log
+summary.synctex.gz

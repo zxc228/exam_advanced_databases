@@ -1,0 +1,182 @@
+[
+    {
+        "_id": "67654348157fdab37fbadf8b",
+        "name": "Armstrong Ltd",
+        "warehouse_addresses": "Carrer de Mallorca, 401, 08013 Barcelona, Spain",
+        "warehouse_coordinates": {
+            "type": "Point",
+            "coordinates": [
+                2.174428,
+                41.403505
+            ]
+        }
+    },
+    {
+        "_id": "67654349157fdab37fbadf8c",
+        "name": "Fitzgerald, Franklin and Acosta",
+        "warehouse_addresses": "Avenida de la Constituci\u00f3n, 3, 41004 Sevilla, Spain",
+        "warehouse_coordinates": {
+            "type": "Point",
+            "coordinates": [
+                -5.993033,
+                37.384711
+            ]
+        }
+    },
+    {
+        "_id": "6765434a157fdab37fbadf8d",
+        "name": "Sanchez-Lang",
+        "warehouse_addresses": "1101 4th St SW, Washington, DC 20024, USA",
+        "warehouse_coordinates": {
+            "type": "Point",
+            "coordinates": [
+                -77.017878,
+                38.877907
+            ]
+        }
+    },
+    {
+        "_id": "6765434d157fdab37fbadf8e",
+        "name": "Bowen Group",
+        "warehouse_addresses": "United Nations Secretariat Building, 405 E 42nd St, New York, NY 10017, USA",
+        "warehouse_coordinates": {
+            "type": "Point",
+            "coordinates": [
+                -73.968084,
+                40.748946
+            ]
+        }
+    },
+    {
+        "_id": "6765434e157fdab37fbadf8f",
+        "name": "Harrison LLC",
+        "warehouse_addresses": "Calle Mayor, 1, 28013 Madrid, Spain",
+        "warehouse_coordinates": {
+            "type": "Point",
+            "coordinates": [
+                -3.70465,
+                40.416254
+            ]
+        }
+    },
+    {
+        "_id": "6765434f157fdab37fbadf90",
+        "name": "Fleming and Sons",
+        "warehouse_addresses": "Paseo del Prado, 2, 28014 Madrid, Spain",
+        "warehouse_coordinates": {
+            "type": "Point",
+            "coordinates": [
+                -3.693554,
+                40.41653
+            ]
+        }
+    },
+    {
+        "_id": "67654352157fdab37fbadf91",
+        "name": "Howe Group",
+        "warehouse_addresses": "Calle de Alcal\u00e1, 50, 28014 Madrid, Spain",
+        "warehouse_coordinates": {
+            "type": "Point",
+            "coordinates": [
+                -3.690588,
+                40.419787
+            ]
+        }
+    },
+    {
+        "_id": "67654352157fdab37fbadf92",
+        "name": "Riggs PLC",
+        "warehouse_addresses": "3109 M St NW, Washington, DC 20007, USA",
+        "warehouse_coordinates": {
+            "type": "Point",
+            "coordinates": [
+                -77.061446,
+                38.905274
+            ]
+        }
+    },
+    {
+        "_id": "67654357157fdab37fbadf93",
+        "name": "Rodgers-Parrish",
+        "warehouse_addresses": "401 Van Ness Ave, San Francisco, CA 94102, USA",
+        "warehouse_coordinates": {
+            "type": "Point",
+            "coordinates": [
+                -122.421034,
+                37.779535
+            ]
+        }
+    },
+    {
+        "_id": "67654358157fdab37fbadf94",
+        "name": "Richard, Ware and Duncan",
+        "warehouse_addresses": "Gran Via, 28, 28013 Madrid, Spain",
+        "warehouse_coordinates": {
+            "type": "Point",
+            "coordinates": [
+                -3.701957,
+                40.420193
+            ]
+        }
+    },
+    {
+        "_id": "6765435a157fdab37fbadf95",
+        "name": "Jensen-Dyer",
+        "warehouse_addresses": "Calle de Serrano, 13, 28001 Madrid, Spain",
+        "warehouse_coordinates": {
+            "type": "Point",
+            "coordinates": [
+                -3.688889,
+                40.423429
+            ]
+        }
+    },
+    {
+        "_id": "6765435d157fdab37fbadf96",
+        "name": "Johnson-Young",
+        "warehouse_addresses": "20 W 34th St., New York, NY 10001, USA",
+        "warehouse_coordinates": {
+            "type": "Point",
+            "coordinates": [
+                -73.985304,
+                40.748654
+            ]
+        }
+    },
+    {
+        "_id": "6765435e157fdab37fbadf97",
+        "name": "Lowe, Young and Russo",
+        "warehouse_addresses": "1600 Pennsylvania Ave NW, Washington, DC 20500, USA",
+        "warehouse_coordinates": {
+            "type": "Point",
+            "coordinates": [
+                -77.036553,
+                38.8977
+            ]
+        }
+    },
+    {
+        "_id": "6765435f157fdab37fbadf98",
+        "name": "Barr Group",
+        "warehouse_addresses": "701 D St NW, Washington, DC 20024, USA",
+        "warehouse_coordinates": {
+            "type": "Point",
+            "coordinates": [
+                -77.022063,
+                38.894878
+            ]
+        }
+    },
+    {
+        "_id": "67654361157fdab37fbadf99",
+        "name": "Roberts, Murphy and Martinez",
+        "warehouse_addresses": "Paseo del Prado, 2, 28014 Madrid, Spain",
+        "warehouse_coordinates": {
+            "type": "Point",
+            "coordinates": [
+                -3.693554,
+                40.41653
+            ]
+        }
+    }
+]

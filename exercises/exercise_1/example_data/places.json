@@ -1,0 +1,12 @@
+[
+  { "_id": 1, "name": "Central Park", "location": { "type": "Point", "coordinates": [-73.9654, 40.7829] }, "rating": 4.7 },
+  { "_id": 2, "name": "Eiffel Tower", "location": { "type": "Point", "coordinates": [2.2945, 48.8584] }, "rating": 4.8 },
+  { "_id": 3, "name": "Louvre Museum", "location": { "type": "Point", "coordinates": [2.3364, 48.8606] }, "rating": 4.9 },
+  { "_id": 4, "name": "Statue of Liberty", "location": { "type": "Point", "coordinates": [-74.0445, 40.6892] }, "rating": 4.6 },
+  { "_id": 5, "name": "Colosseum", "location": { "type": "Point", "coordinates": [12.4922, 41.8902] }, "rating": 4.7 },
+  { "_id": 6, "name": "Great Wall of China", "location": { "type": "Point", "coordinates": [116.5704, 40.4319] }, "rating": 4.8 },
+  { "_id": 7, "name": "Sydney Opera House", "location": { "type": "Point", "coordinates": [151.2153, -33.8568] }, "rating": 4.7 },
+  { "_id": 8, "name": "Taj Mahal", "location": { "type": "Point", "coordinates": [78.0421, 27.1751] }, "rating": 4.9 },
+  { "_id": 9, "name": "Machu Picchu", "location": { "type": "Point", "coordinates": [-72.5450, -13.1631] }, "rating": 4.8 },
+  { "_id": 10, "name": "Christ the Redeemer", "location": { "type": "Point", "coordinates": [-43.2105, -22.9519] }, "rating": 4.7 }
+]

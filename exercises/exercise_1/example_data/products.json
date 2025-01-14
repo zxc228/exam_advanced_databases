@@ -1,0 +1,12 @@
+[
+  { "_id": 1, "name": "Laptop", "description": "A high-performance laptop", "price": 1200, "category": "Electronics" },
+  { "_id": 2, "name": "Smartphone", "description": "A latest model smartphone", "price": 800, "category": "Electronics" },
+  { "_id": 3, "name": "Headphones", "description": "Noise-cancelling headphones", "price": 200, "category": "Electronics" },
+  { "_id": 4, "name": "Coffee Maker", "description": "Automatic coffee maker", "price": 100, "category": "Home Appliances" },
+  { "_id": 5, "name": "Blender", "description": "High-speed blender", "price": 150, "category": "Home Appliances" },
+  { "_id": 6, "name": "Desk Chair", "description": "Ergonomic desk chair", "price": 250, "category": "Furniture" },
+  { "_id": 7, "name": "Bookshelf", "description": "Wooden bookshelf", "price": 300, "category": "Furniture" },
+  { "_id": 8, "name": "Running Shoes", "description": "Comfortable running shoes", "price": 120, "category": "Sportswear" },
+  { "_id": 9, "name": "Jacket", "description": "Waterproof jacket", "price": 180, "category": "Sportswear" },
+  { "_id": 10, "name": "Watch", "description": "Smartwatch with fitness tracking", "price": 350, "category": "Accessories" }
+]

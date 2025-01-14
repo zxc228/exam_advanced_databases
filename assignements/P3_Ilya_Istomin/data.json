@@ -1,0 +1,623 @@
+{
+    "customers": [
+        {
+            "name": "Nancy Ramirez",
+            "billing_addresses": "Carrer de Mallorca, 401, 08013 Barcelona, Spain",
+            "registration_date": "2023-03-11",
+            "shipping_addresses": "1101 4th St SW, Washington, DC 20024, USA",
+            "payment_cards": "6537525857991850",
+            "last_access_date": "2024-02-25"
+        },
+        {
+            "name": "Fernando Patel",
+            "billing_addresses": "Avenida de la Constituci\u00f3n, 3, 41004 Sevilla, Spain",
+            "registration_date": "2023-05-08",
+            "shipping_addresses": "Calle de Serrano, 13, 28001 Madrid, Spain",
+            "payment_cards": "378066817510444",
+            "last_access_date": "2024-04-06"
+        },
+        {
+            "name": "Jessica Silva",
+            "billing_addresses": "United Nations Secretariat Building, 405 E 42nd St, New York, NY 10017, USA",
+            "registration_date": "2023-11-25",
+            "shipping_addresses": "Calle Mayor, 1, 28013 Madrid, Spain",
+            "payment_cards": "6543969348885275",
+            "last_access_date": "2024-04-12"
+        },
+        {
+            "name": "Joseph Reynolds",
+            "billing_addresses": "United Nations Secretariat Building, 405 E 42nd St, New York, NY 10017, USA",
+            "registration_date": "2023-11-22",
+            "shipping_addresses": "Gran Via, 28, 28013 Madrid, Spain",
+            "payment_cards": "4573814702900",
+            "last_access_date": "2024-01-18"
+        },
+        {
+            "name": "Julie Brown",
+            "billing_addresses": "Calle Mayor, 1, 28013 Madrid, Spain",
+            "registration_date": "2024-01-02",
+            "shipping_addresses": "Calle del Prado, 28014 Madrid, Spain",
+            "payment_cards": "6584705551685212",
+            "last_access_date": "2024-03-30"
+        },
+        {
+            "name": "Robin Morrow",
+            "billing_addresses": "Avenida de la Constituci\u00f3n, 3, 41004 Sevilla, Spain",
+            "registration_date": "2024-09-07",
+            "shipping_addresses": "Carrer de Mallorca, 401, 08013 Barcelona, Spain",
+            "payment_cards": "4265667916560347672",
+            "last_access_date": "2025-06-23"
+        },
+        {
+            "name": "Thomas Morales",
+            "billing_addresses": "701 D St NW, Washington, DC 20024, USA",
+            "registration_date": "2023-09-25",
+            "shipping_addresses": "Pla\u00e7a de Sant Jaume, 1, 08002 Barcelona, Spain",
+            "payment_cards": "4549294067188937",
+            "last_access_date": "2024-04-23"
+        },
+        {
+            "name": "Anthony Walker",
+            "billing_addresses": "Paseo del Prado, 2, 28014 Madrid, Spain",
+            "registration_date": "2024-05-12",
+            "shipping_addresses": "Calle de Alcal\u00e1, 50, 28014 Madrid, Spain",
+            "payment_cards": "6011454820286121",
+            "last_access_date": "2024-10-08"
+        },
+        {
+            "name": "Jeff Walker",
+            "billing_addresses": "Carrer de Mallorca, 401, 08013 Barcelona, Spain",
+            "registration_date": "2024-04-24",
+            "shipping_addresses": "20 W 34th St., New York, NY 10001, USA",
+            "payment_cards": "676185047641",
+            "last_access_date": "2025-02-08"
+        },
+        {
+            "name": "Jennifer Walker",
+            "billing_addresses": "Calle del Prado, 28014 Madrid, Spain",
+            "registration_date": "2024-07-17",
+            "shipping_addresses": "Paseo del Prado, 2, 28014 Madrid, Spain",
+            "payment_cards": "213155276356917",
+            "last_access_date": "2025-03-31"
+        },
+        {
+            "name": "Marissa Rogers",
+            "billing_addresses": "3109 M St NW, Washington, DC 20007, USA",
+            "registration_date": "2023-10-07",
+            "shipping_addresses": "Calle del Prado, 28014 Madrid, Spain",
+            "payment_cards": "3500628275945993",
+            "last_access_date": "2024-07-08"
+        },
+        {
+            "name": "Mary Jenkins",
+            "billing_addresses": "Calle del Prado, 28014 Madrid, Spain",
+            "registration_date": "2023-03-02",
+            "shipping_addresses": "Pla\u00e7a de Sant Jaume, 1, 08002 Barcelona, Spain",
+            "payment_cards": "6524434978391154",
+            "last_access_date": "2023-03-18"
+        },
+        {
+            "name": "Alicia Lawrence",
+            "billing_addresses": "1101 4th St SW, Washington, DC 20024, USA",
+            "registration_date": "2023-07-18",
+            "shipping_addresses": "Calle del Prado, 28014 Madrid, Spain",
+            "payment_cards": "348820596918658",
+            "last_access_date": "2024-03-24"
+        },
+        {
+            "name": "Holly Oliver",
+            "billing_addresses": "Calle de Alcal\u00e1, 50, 28014 Madrid, Spain",
+            "registration_date": "2024-10-08",
+            "shipping_addresses": "20 W 34th St., New York, NY 10001, USA",
+            "payment_cards": "2275943738350565",
+            "last_access_date": "2025-03-26"
+        },
+        {
+            "name": "Ricardo Brooks",
+            "billing_addresses": "Paseo del Prado, 2, 28014 Madrid, Spain",
+            "registration_date": "2024-09-18",
+            "shipping_addresses": "3109 M St NW, Washington, DC 20007, USA",
+            "payment_cards": "4208461090845627874",
+            "last_access_date": "2025-01-08"
+        }
+    ],
+    "products": [
+        {
+            "name": "Air Conditioner",
+            "supplier_product_code": "1851053678710",
+            "price_without_vat": 72.01,
+            "price_with_vat": 89.53,
+            "shipping_cost": 11.3,
+            "discount_date_range": {
+                "start_date": "2024-06-04",
+                "end_date": "2024-06-30"
+            },
+            "dimensions": {
+                "length": 36,
+                "width": 44,
+                "height": 17
+            },
+            "weight": 30.13,
+            "suppliers": "Armstrong Ltd"
+        },
+        {
+            "name": "Air Conditioner",
+            "supplier_product_code": "8929280349642",
+            "price_without_vat": 68.46,
+            "price_with_vat": 90.55,
+            "shipping_cost": 19.99,
+            "discount_date_range": {
+                "start_date": "2023-03-02",
+                "end_date": "2025-07-19"
+            },
+            "dimensions": {
+                "length": 15,
+                "width": 83,
+                "height": 37
+            },
+            "weight": 2.22,
+            "suppliers": "Fitzgerald, Franklin and Acosta"
+        },
+        {
+            "name": "Headphones",
+            "supplier_product_code": "9811966660433",
+            "price_without_vat": 66.28,
+            "price_with_vat": 85.47,
+            "shipping_cost": 19.95,
+            "discount_date_range": {
+                "start_date": "2024-02-19",
+                "end_date": "2024-02-23"
+            },
+            "dimensions": {
+                "length": 80,
+                "width": 2,
+                "height": 43
+            },
+            "weight": 48.4,
+            "suppliers": "Sanchez-Lang"
+        },
+        {
+            "name": "Monitor",
+            "supplier_product_code": "7089484854715",
+            "price_without_vat": 41.24,
+            "price_with_vat": 53.8,
+            "shipping_cost": 13.11,
+            "discount_date_range": {
+                "start_date": "2024-07-25",
+                "end_date": "2024-05-31"
+            },
+            "dimensions": {
+                "length": 73,
+                "width": 96,
+                "height": 8
+            },
+            "weight": 36.87,
+            "suppliers": "Bowen Group"
+        },
+        {
+            "name": "Washing Machine",
+            "supplier_product_code": "0071562531912",
+            "price_without_vat": 72.19,
+            "price_with_vat": 90.31,
+            "shipping_cost": 18.0,
+            "discount_date_range": {
+                "start_date": "2024-09-09",
+                "end_date": "2024-09-07"
+            },
+            "dimensions": {
+                "length": 61,
+                "width": 26,
+                "height": 30
+            },
+            "weight": 48.51,
+            "suppliers": "Harrison LLC"
+        },
+        {
+            "name": "Camera",
+            "supplier_product_code": "9891732825952",
+            "price_without_vat": 60.14,
+            "price_with_vat": 74.05,
+            "shipping_cost": 13.86,
+            "discount_date_range": {
+                "start_date": "2024-01-29",
+                "end_date": "2024-06-13"
+            },
+            "dimensions": {
+                "length": 4,
+                "width": 28,
+                "height": 16
+            },
+            "weight": 49.55,
+            "suppliers": "Fleming and Sons"
+        },
+        {
+            "name": "Router",
+            "supplier_product_code": "9588039536390",
+            "price_without_vat": 14.76,
+            "price_with_vat": 18.63,
+            "shipping_cost": 14.04,
+            "discount_date_range": {
+                "start_date": "2023-07-20",
+                "end_date": "2024-11-21"
+            },
+            "dimensions": {
+                "length": 75,
+                "width": 65,
+                "height": 76
+            },
+            "weight": 17.04,
+            "suppliers": "Howe Group"
+        },
+        {
+            "name": "Router",
+            "supplier_product_code": "4856305028401",
+            "price_without_vat": 89.52,
+            "price_with_vat": 124.83,
+            "shipping_cost": 5.51,
+            "discount_date_range": {
+                "start_date": "2023-04-27",
+                "end_date": "2024-07-20"
+            },
+            "dimensions": {
+                "length": 23,
+                "width": 90,
+                "height": 83
+            },
+            "weight": 26.61,
+            "suppliers": "Riggs PLC"
+        },
+        {
+            "name": "Smart Speaker",
+            "supplier_product_code": "2859812843620",
+            "price_without_vat": 91.13,
+            "price_with_vat": 124.4,
+            "shipping_cost": 10.86,
+            "discount_date_range": {
+                "start_date": "2024-05-19",
+                "end_date": "2024-11-27"
+            },
+            "dimensions": {
+                "length": 47,
+                "width": 39,
+                "height": 56
+            },
+            "weight": 38.5,
+            "suppliers": "Rodgers-Parrish"
+        },
+        {
+            "name": "Washing Machine",
+            "supplier_product_code": "3774925052105",
+            "price_without_vat": 70.49,
+            "price_with_vat": 98.06,
+            "shipping_cost": 5.89,
+            "discount_date_range": {
+                "start_date": "2024-01-29",
+                "end_date": "2024-07-17"
+            },
+            "dimensions": {
+                "length": 58,
+                "width": 4,
+                "height": 45
+            },
+            "weight": 9.81,
+            "suppliers": "Richard, Ware and Duncan"
+        },
+        {
+            "name": "Printer",
+            "supplier_product_code": "2143826561800",
+            "price_without_vat": 92.44,
+            "price_with_vat": 127.66,
+            "shipping_cost": 15.91,
+            "discount_date_range": {
+                "start_date": "2024-02-25",
+                "end_date": "2025-06-15"
+            },
+            "dimensions": {
+                "length": 34,
+                "width": 11,
+                "height": 31
+            },
+            "weight": 15.04,
+            "suppliers": "Jensen-Dyer"
+        },
+        {
+            "name": "Washing Machine",
+            "supplier_product_code": "1665699907383",
+            "price_without_vat": 51.95,
+            "price_with_vat": 70.33,
+            "shipping_cost": 8.02,
+            "discount_date_range": {
+                "start_date": "2023-04-17",
+                "end_date": "2025-07-19"
+            },
+            "dimensions": {
+                "length": 13,
+                "width": 87,
+                "height": 28
+            },
+            "weight": 26.7,
+            "suppliers": "Johnson-Young"
+        },
+        {
+            "name": "Washing Machine",
+            "supplier_product_code": "8555338224380",
+            "price_without_vat": 86.48,
+            "price_with_vat": 120.77,
+            "shipping_cost": 10.58,
+            "discount_date_range": {
+                "start_date": "2024-05-10",
+                "end_date": "2023-12-03"
+            },
+            "dimensions": {
+                "length": 90,
+                "width": 27,
+                "height": 26
+            },
+            "weight": 14.59,
+            "suppliers": "Lowe, Young and Russo"
+        },
+        {
+            "name": "Headphones",
+            "supplier_product_code": "0358983375463",
+            "price_without_vat": 59.08,
+            "price_with_vat": 78.02,
+            "shipping_cost": 8.99,
+            "discount_date_range": {
+                "start_date": "2023-02-16",
+                "end_date": "2024-08-20"
+            },
+            "dimensions": {
+                "length": 21,
+                "width": 72,
+                "height": 64
+            },
+            "weight": 28.89,
+            "suppliers": "Barr Group"
+        },
+        {
+            "name": "Monitor",
+            "supplier_product_code": "4906638899015",
+            "price_without_vat": 40.46,
+            "price_with_vat": 52.7,
+            "shipping_cost": 16.3,
+            "discount_date_range": {
+                "start_date": "2024-07-07",
+                "end_date": "2023-06-02"
+            },
+            "dimensions": {
+                "length": 56,
+                "width": 1,
+                "height": 22
+            },
+            "weight": 42.23,
+            "suppliers": "Roberts, Murphy and Martinez"
+        }
+    ],
+    "purchases": [
+        {
+            "products": [
+                "Tablet",
+                "Smartwatch",
+                "Air Conditioner",
+                "Monitor",
+                "Air Conditioner"
+            ],
+            "customer": "Thomas Mills",
+            "purchase_price": 471.64,
+            "purchase_date": "2024-05-27",
+            "shipping_address": "Carrer de Mallorca, 401, 08013 Barcelona, Spain"
+        },
+        {
+            "products": [
+                "Air Conditioner"
+            ],
+            "customer": "Belinda Williams",
+            "purchase_price": 267.12,
+            "purchase_date": "2024-09-29",
+            "shipping_address": "Calle de Alcal\u00e1, 50, 28014 Madrid, Spain"
+        },
+        {
+            "products": [
+                "Printer"
+            ],
+            "customer": "Madeline Turner",
+            "purchase_price": 441.03,
+            "purchase_date": "2023-10-07",
+            "shipping_address": "C. de Bail\u00e9n, 4, Centro, 28013 Madrid"
+        },
+        {
+            "products": [
+                "Headphones"
+            ],
+            "customer": "Holly Taylor",
+            "purchase_price": 267.45,
+            "purchase_date": "2023-01-07",
+            "shipping_address": "3109 M St NW, Washington, DC 20007, USA"
+        },
+        {
+            "products": [
+                "Washing Machine",
+                "Monitor"
+            ],
+            "customer": "Judith Hobbs",
+            "purchase_price": 409.79,
+            "purchase_date": "2023-05-20",
+            "shipping_address": "Paseo del Prado, 2, 28014 Madrid, Spain"
+        },
+        {
+            "products": [
+                "Monitor",
+                "TV",
+                "Monitor",
+                "Monitor",
+                "Tablet"
+            ],
+            "customer": "Michael Martinez",
+            "purchase_price": 231.59,
+            "purchase_date": "2024-06-20",
+            "shipping_address": "Avenida de la Constituci\u00f3n, 3, 41004 Sevilla, Spain"
+        },
+        {
+            "products": [
+                "Microwave"
+            ],
+            "customer": "Beth Smith",
+            "purchase_price": 309.16,
+            "purchase_date": "2023-07-25",
+            "shipping_address": "Calle de Alcal\u00e1, 50, 28014 Madrid, Spain"
+        },
+        {
+            "products": [
+                "Smart Speaker",
+                "Air Conditioner",
+                "Headphones",
+                "Fridge",
+                "Smartphone"
+            ],
+            "customer": "Michael Moreno",
+            "purchase_price": 175.79,
+            "purchase_date": "2024-04-15",
+            "shipping_address": "Calle Mayor, 1, 28013 Madrid, Spain"
+        },
+        {
+            "products": [
+                "Washing Machine",
+                "Smart Speaker"
+            ],
+            "customer": "Teresa Stone",
+            "purchase_price": 465.18,
+            "purchase_date": "2024-05-21",
+            "shipping_address": "151 3rd St, San Francisco, CA 94103, USA"
+        },
+        {
+            "products": [
+                "Smartphone",
+                "Fridge",
+                "Air Conditioner",
+                "Smartwatch",
+                "Smartwatch"
+            ],
+            "customer": "Desiree Mcbride",
+            "purchase_price": 115.22,
+            "purchase_date": "2023-03-29",
+            "shipping_address": "Paseo del Prado, 2, 28014 Madrid, Spain"
+        },
+        {
+            "products": [
+                "TV",
+                "Smart Speaker",
+                "Tablet",
+                "Laptop",
+                "Smartwatch"
+            ],
+            "customer": "Tyler Richardson",
+            "purchase_price": 451.14,
+            "purchase_date": "2024-05-21",
+            "shipping_address": "225 Liberty St, New York, NY 10281, USA"
+        },
+        {
+            "products": [
+                "Router",
+                "TV"
+            ],
+            "customer": "Kristen Miller",
+            "purchase_price": 344.99,
+            "purchase_date": "2024-08-10",
+            "shipping_address": "151 3rd St, San Francisco, CA 94103, USA"
+        },
+        {
+            "products": [
+                "Microwave",
+                "Headphones",
+                "Washing Machine"
+            ],
+            "customer": "Courtney Richmond",
+            "purchase_price": 225.56,
+            "purchase_date": "2024-04-27",
+            "shipping_address": "1101 4th St SW, Washington, DC 20024, USA"
+        },
+        {
+            "products": [
+                "TV",
+                "Camera"
+            ],
+            "customer": "Kristen Nunez",
+            "purchase_price": 275.28,
+            "purchase_date": "2023-05-06",
+            "shipping_address": "1101 4th St SW, Washington, DC 20024, USA"
+        },
+        {
+            "products": [
+                "Air Conditioner",
+                "Monitor",
+                "Smartwatch"
+            ],
+            "customer": "Barbara Brooks",
+            "purchase_price": 347.24,
+            "purchase_date": "2023-09-04",
+            "shipping_address": "Carrer de Mallorca, 401, 08013 Barcelona, Spain"
+        }
+    ],
+    "suppliers": [
+        {
+            "name": "Armstrong Ltd",
+            "warehouse_addresses": "Carrer de Mallorca, 401, 08013 Barcelona, Spain"
+        },
+        {
+            "name": "Fitzgerald, Franklin and Acosta",
+            "warehouse_addresses": "Avenida de la Constitución, 3, 41004 Sevilla, Spain"
+        },
+        {
+            "name": "Sanchez-Lang",
+            "warehouse_addresses": "1101 4th St SW, Washington, DC 20024, USA"
+        },
+        {
+            "name": "Bowen Group",
+            "warehouse_addresses": "United Nations Secretariat Building, 405 E 42nd St, New York, NY 10017, USA"
+        },
+        {
+            "name": "Harrison LLC",
+            "warehouse_addresses": "Calle Mayor, 1, 28013 Madrid, Spain"
+        },
+        {
+            "name": "Fleming and Sons",
+            "warehouse_addresses": "Paseo del Prado, 2, 28014 Madrid, Spain"
+        },
+        {
+            "name": "Howe Group",
+            "warehouse_addresses": "Calle de Alcalá, 50, 28014 Madrid, Spain"
+        },
+        {
+            "name": "Riggs PLC",
+            "warehouse_addresses": "3109 M St NW, Washington, DC 20007, USA"
+        },
+        {
+            "name": "Rodgers-Parrish",
+            "warehouse_addresses": "401 Van Ness Ave, San Francisco, CA 94102, USA"
+        },
+        {
+            "name": "Richard, Ware and Duncan",
+            "warehouse_addresses": "Gran Via, 28, 28013 Madrid, Spain"
+        },
+        {
+            "name": "Jensen-Dyer",
+            "warehouse_addresses": "C. de Bailén, 4, Centro, 28013 Madrid"
+        },
+        {
+            "name": "Johnson-Young",
+            "warehouse_addresses": "20 W 34th St., New York, NY 10001, USA"
+        },
+        {
+            "name": "Lowe, Young and Russo",
+            "warehouse_addresses": "1600 Pennsylvania Ave NW, Washington, DC 20500, USA"
+        },
+        {
+            "name": "Barr Group",
+            "warehouse_addresses": "701 D St NW, Washington, DC 20024, USA"
+        },
+        {
+            "name": "Roberts, Murphy and Martinez",
+            "warehouse_addresses": "Paseo del Prado, 2, 28014 Madrid, Spain"
+        }
+    ]
+}

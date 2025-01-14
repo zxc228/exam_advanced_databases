@@ -1,0 +1,285 @@
+[
+    {
+        "_id": "6765432e157fdab37fbadf7c",
+        "products": [
+            "Tablet",
+            "Smartwatch",
+            "Air Conditioner",
+            "Monitor",
+            "Air Conditioner"
+        ],
+        "customer": "Thomas Mills",
+        "purchase_price": 471.64,
+        "purchase_date": "2024-05-27",
+        "shipping_address": "Carrer de Mallorca, 401, 08013 Barcelona, Spain",
+        "shipping_coordinates": {
+            "type": "Point",
+            "coordinates": [
+                2.174428,
+                41.403505
+            ]
+        }
+    },
+    {
+        "_id": "67654331157fdab37fbadf7d",
+        "products": [
+            "Air Conditioner"
+        ],
+        "customer": "Belinda Williams",
+        "purchase_price": 267.12,
+        "purchase_date": "2024-09-29",
+        "shipping_address": "Calle de Alcal\u00e1, 50, 28014 Madrid, Spain",
+        "shipping_coordinates": {
+            "type": "Point",
+            "coordinates": [
+                -3.690588,
+                40.419787
+            ]
+        }
+    },
+    {
+        "_id": "67654332157fdab37fbadf7e",
+        "products": [
+            "Printer"
+        ],
+        "customer": "Madeline Turner",
+        "purchase_price": 441.03,
+        "purchase_date": "2023-10-07",
+        "shipping_address": "Calle del Prado, 28014 Madrid, Spain",
+        "shipping_coordinates": {
+            "type": "Point",
+            "coordinates": [
+                -3.698255,
+                40.415007
+            ]
+        }
+    },
+    {
+        "_id": "67654333157fdab37fbadf7f",
+        "products": [
+            "Headphones"
+        ],
+        "customer": "Holly Taylor",
+        "purchase_price": 267.45,
+        "purchase_date": "2023-01-07",
+        "shipping_address": "3109 M St NW, Washington, DC 20007, USA",
+        "shipping_coordinates": {
+            "type": "Point",
+            "coordinates": [
+                -77.061446,
+                38.905274
+            ]
+        }
+    },
+    {
+        "_id": "67654335157fdab37fbadf80",
+        "products": [
+            "Washing Machine",
+            "Monitor"
+        ],
+        "customer": "Judith Hobbs",
+        "purchase_price": 409.79,
+        "purchase_date": "2023-05-20",
+        "shipping_address": "Paseo del Prado, 2, 28014 Madrid, Spain",
+        "shipping_coordinates": {
+            "type": "Point",
+            "coordinates": [
+                -3.693554,
+                40.41653
+            ]
+        }
+    },
+    {
+        "_id": "67654336157fdab37fbadf81",
+        "products": [
+            "Monitor",
+            "TV",
+            "Monitor",
+            "Monitor",
+            "Tablet"
+        ],
+        "customer": "Michael Martinez",
+        "purchase_price": 231.59,
+        "purchase_date": "2024-06-20",
+        "shipping_address": "Avenida de la Constituci\u00f3n, 3, 41004 Sevilla, Spain",
+        "shipping_coordinates": {
+            "type": "Point",
+            "coordinates": [
+                -5.993033,
+                37.384711
+            ]
+        }
+    },
+    {
+        "_id": "67654339157fdab37fbadf82",
+        "products": [
+            "Microwave"
+        ],
+        "customer": "Beth Smith",
+        "purchase_price": 309.16,
+        "purchase_date": "2023-07-25",
+        "shipping_address": "Calle de Alcal\u00e1, 50, 28014 Madrid, Spain",
+        "shipping_coordinates": {
+            "type": "Point",
+            "coordinates": [
+                -3.690588,
+                40.419787
+            ]
+        }
+    },
+    {
+        "_id": "6765433a157fdab37fbadf83",
+        "products": [
+            "Smart Speaker",
+            "Air Conditioner",
+            "Headphones",
+            "Fridge",
+            "Smartphone"
+        ],
+        "customer": "Michael Moreno",
+        "purchase_price": 175.79,
+        "purchase_date": "2024-04-15",
+        "shipping_address": "Calle Mayor, 1, 28013 Madrid, Spain",
+        "shipping_coordinates": {
+            "type": "Point",
+            "coordinates": [
+                -3.70465,
+                40.416254
+            ]
+        }
+    },
+    {
+        "_id": "6765433f157fdab37fbadf84",
+        "products": [
+            "Washing Machine",
+            "Smart Speaker"
+        ],
+        "customer": "Teresa Stone",
+        "purchase_price": 465.18,
+        "purchase_date": "2024-05-21",
+        "shipping_address": "151 3rd St, San Francisco, CA 94103, USA",
+        "shipping_coordinates": {
+            "type": "Point",
+            "coordinates": [
+                -122.400736,
+                37.785915
+            ]
+        }
+    },
+    {
+        "_id": "67654340157fdab37fbadf85",
+        "products": [
+            "Smartphone",
+            "Fridge",
+            "Air Conditioner",
+            "Smartwatch",
+            "Smartwatch"
+        ],
+        "customer": "Desiree Mcbride",
+        "purchase_price": 115.22,
+        "purchase_date": "2023-03-29",
+        "shipping_address": "Paseo del Prado, 2, 28014 Madrid, Spain",
+        "shipping_coordinates": {
+            "type": "Point",
+            "coordinates": [
+                -3.693554,
+                40.41653
+            ]
+        }
+    },
+    {
+        "_id": "67654340157fdab37fbadf86",
+        "products": [
+            "TV",
+            "Smart Speaker",
+            "Tablet",
+            "Laptop",
+            "Smartwatch"
+        ],
+        "customer": "Tyler Richardson",
+        "purchase_price": 451.14,
+        "purchase_date": "2024-05-21",
+        "shipping_address": "225 Liberty St, New York, NY 10281, USA",
+        "shipping_coordinates": {
+            "type": "Point",
+            "coordinates": [
+                -74.015436,
+                40.712272
+            ]
+        }
+    },
+    {
+        "_id": "67654343157fdab37fbadf87",
+        "products": [
+            "Router",
+            "TV"
+        ],
+        "customer": "Kristen Miller",
+        "purchase_price": 344.99,
+        "purchase_date": "2024-08-10",
+        "shipping_address": "151 3rd St, San Francisco, CA 94103, USA",
+        "shipping_coordinates": {
+            "type": "Point",
+            "coordinates": [
+                -122.400736,
+                37.785915
+            ]
+        }
+    },
+    {
+        "_id": "67654344157fdab37fbadf88",
+        "products": [
+            "Microwave",
+            "Headphones",
+            "Washing Machine"
+        ],
+        "customer": "Courtney Richmond",
+        "purchase_price": 225.56,
+        "purchase_date": "2024-04-27",
+        "shipping_address": "1101 4th St SW, Washington, DC 20024, USA",
+        "shipping_coordinates": {
+            "type": "Point",
+            "coordinates": [
+                -77.017878,
+                38.877907
+            ]
+        }
+    },
+    {
+        "_id": "67654345157fdab37fbadf89",
+        "products": [
+            "TV",
+            "Camera"
+        ],
+        "customer": "Kristen Nunez",
+        "purchase_price": 275.28,
+        "purchase_date": "2023-05-06",
+        "shipping_address": "1101 4th St SW, Washington, DC 20024, USA",
+        "shipping_coordinates": {
+            "type": "Point",
+            "coordinates": [
+                -77.017878,
+                38.877907
+            ]
+        }
+    },
+    {
+        "_id": "67654347157fdab37fbadf8a",
+        "products": [
+            "Air Conditioner",
+            "Monitor",
+            "Smartwatch"
+        ],
+        "customer": "Barbara Brooks",
+        "purchase_price": 347.24,
+        "purchase_date": "2023-09-04",
+        "shipping_address": "Carrer de Mallorca, 401, 08013 Barcelona, Spain",
+        "shipping_coordinates": {
+            "type": "Point",
+            "coordinates": [
+                2.174428,
+                41.403505
+            ]
+        }
+    }
+]
