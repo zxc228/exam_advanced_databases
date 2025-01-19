@@ -1,0 +1,1 @@
+cat localstore.data | python mx.py | sort | python rx.py
