@@ -237,6 +237,19 @@
         { $out: "passing_students" }
     ]);
     ```
+11. $count оператор для подстчета кол-ва документов
+
+    синтаксис
+    ```js
+    { $count: "<field>" }
+    ```
+    пример
+    ```js
+    db.students.aggregate([
+    { $count: "totalDocuments" }
+    ]);
+    ```
+
 ### Аггрегаторные операторы 
 
 Они используются вместе с $group
