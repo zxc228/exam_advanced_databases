@@ -37,7 +37,7 @@ def getLocationPoint(address: str) -> Point:
         letters_array = ''.join([random.choice(string.ascii_letters) for _ in range(length)])
 
         location = None
-        geolocator = Nominatim(user_agent=letters_array)
+        geolocator = Nominatim(user_agent=letters_array, timeout=10)
         try:
             #DONE
             # It is You need to provide a user_agent to use the API

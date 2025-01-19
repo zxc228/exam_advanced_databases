@@ -4,3 +4,4 @@ summary.fdb_latexmk
 summary.fls
 summary.log
 summary.synctex.gz
+__pycache__/

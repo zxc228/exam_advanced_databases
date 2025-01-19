@@ -37,17 +37,18 @@ def getLocationPoint(address: str) -> Point:
         letters_array = ''.join([random.choice(string.ascii_letters) for _ in range(length)])
 
         location = None
-        geolocator = Nominatim(user_agent=letters_array)
+        geolocator = Nominatim(user_agent=letters_array, timeout=10)
         try:
-            time.sleep(1)
             #DONE
             # It is You need to provide a user_agent to use the API
             # Use a random name for the user_agent
             location = geolocator.geocode(address)
         except GeocoderTimedOut:
+            
             # May throw an exception if the timeout occurs
             # Try again
             print("GeocoderTimedOut: Retrying...")
+            time.sleep(1)
         
     #DONE
     if location:
@@ -56,10 +57,7 @@ def getLocationPoint(address: str) -> Point:
     else:
         raise ValueError('Location not found')
         
-def get_coordinates_as_dict(address: str) -> dict:
-    #func for transforming geoLocation to dict
-    location_point = getLocationPoint(address)
-    return {"longitude": location_point['coordinates'][0], "latitude": location_point['coordinates'][1]}
+
     
 
 
@@ -180,7 +178,6 @@ class Model:
         model values.
         """
         #DONE
-        print(self.__dict__)
         if not hasattr(self, '_id'):
             result = self.db.insert_one(self.__dict__)
             self._id = result.inserted_id
@@ -323,51 +320,46 @@ class ModelCursor:
             yield self.model(**document)
         
 
-    def initApp(definitions_path: str = "./models.yml", mongodb_uri="mongodb://localhost:27017/", db_name="abd"):
-        """
-        Declare the classes that inherit from Model for each of the
-        models in the collections defined in definitions_path.
-        Initializes the model classes by providing the supported and required variables for each of them and the connection to the database collection.
+def initApp(definitions_path: str = "./models.yml", mongodb_uri="mongodb://localhost:27017/", db_name="abd") -> None:
+    """
+    Declare the classes that inherit from Model for each of the
+    models in the collections defined in definitions_path.
+    Initializes the model classes by providing the supported and required variables for each of them and the connection to the database collection.
 
-        Parameters
-        ----------
-        definitions_path : str
-        path to the model definitions file
-        mongodb_uri : str
-        database connection uri
-        db_name : str
-        database name
-        """
-        #DONE
-        # Initialize database
-        client = pymongo.MongoClient(mongodb_uri)
-        db = client[db_name]
+    Parameters
+    ----------
+    definitions_path : str
+    path to the model definitions file
+    mongodb_uri : str
+    database connection uri
+    db_name : str
+    database name
+    """
+    #DONE
+    # Initialize database
+    client = pymongo.MongoClient(mongodb_uri)
+    db = client[db_name]
+    
+    #DONE
+    # Declare as many model collection classes as exist in the database
+    # Read the model definition file to get the collections
+    # and the allowed and required variables for each of them.
+    # Example of model declaration for collection called MyModel 
+    with open(definitions_path, "r") as file:
+        models_definitions = yaml.safe_load(file)
+    # Ignore the warning from Pylance about MyModel, it is unable to detect
+    # that the class has been declared in the previous line since it is done
+    # at runtime.
+    for model_name, model_info in models_definitions.items():
+        # Extract required and admissible variables from the YAML file
+        required_vars = set(model_info['required_vars'])
+        admissible_vars = set(model_info['admissible_vars'])
+
+        # Dynamically create model classes
+        globals()[model_name] = type(model_name, (Model,), {})
         
-        #DONE
-        # Declare as many model collection classes as exist in the database
-        # Read the model definition file to get the collections
-        # and the allowed and required variables for each of them.
-        # Example of model declaration for collection called MyModel 
-        with open(definitions_path, "r") as file:
-            models_definitions = yaml.safe_load(file)
-        # Ignore the warning from Pylance about MyModel, it is unable to detect
-        # that the class has been declared in the previous line since it is done
-        # at runtime.
-        for model_name, model_info in models_definitions.items():
-            # Extract required and admissible variables from the YAML file
-            required_vars = set(model_info['required_vars'])
-            admissible_vars = set(model_info['admissible_vars'])
-
-            # Dynamically create model classes
-            globals()[model_name] = type(model_name, (Model,), {})
-            
-            # Initialize the model class with the appropriate collection and variables
-            globals()[model_name].init_class(db_collection=db[model_name.lower()], required_vars=required_vars, admissible_vars=admissible_vars)
-        return globals()
-
-
-
-#globals().update(initApp())
+        # Initialize the model class with the appropriate collection and variables
+        globals()[model_name].init_class(db_collection=db[model_name], required_vars=required_vars, admissible_vars=admissible_vars)
 
 # # TODO
 # # PROJECT 2
@@ -395,14 +387,12 @@ if __name__ == '__main__':
 
     # #for local use
 
-    ModelCursor.initApp(definitions_path="./models_product.yml", 
+    initApp(definitions_path="./models_product.yml", 
                        mongodb_uri = "mongodb://localhost:27017/", 
                         db_name="db1")
     
 
-    # var = Customer.find({})
-    # for elem in var:
-    #     print(elem.__dict__)
+    
     # for cloud use (I use several computers and i have to use cloud)
     # Use MongoDB cluster (add your cluster URI and credentials)
 
@@ -414,171 +404,171 @@ if __name__ == '__main__':
     
    
     #I am using local data.json file for inserting data into my mongo db collections
-    # data = load_data_from_json()
-    # print("CUSTOMER\n")
-    # for elem in data['customers']:
-    #     customer = Customer(
+    data = load_data_from_json()
+    
+    for elem in data['customers']:
+        customer = Customer(
 
-    #         name=elem['name'],
-    #         billing_addresses=elem['billing_addresses'],
-    #         coordinates_billing_adresses = get_coordinates_as_dict(elem['billing_addresses']),
-    #         registration_date=elem['registration_date'],
-    #         shipping_addresses=elem['shipping_addresses'],
-    #         coordinates_shipping_adresses = get_coordinates_as_dict(elem['shipping_addresses']),
-    #         payment_cards=elem['payment_cards'],
-    #         last_access_date=elem['last_access_date']
-    #     )
-    #     customer.save()
-    # print("PRODUCT\n")
-    # for elem in data['products']:
-    #     product = Product(
-    #         name=elem['name'],
-    #         supplier_product_code=elem['supplier_product_code'],
-    #         price_without_vat=elem['price_without_vat'],
-    #         price_with_vat=elem['price_with_vat'],
-    #         shipping_cost=elem['shipping_cost'],
-    #         discount_date_range=elem['discount_date_range'],
-    #         dimensions=elem['dimensions'],
-    #         weight=elem['weight'],
-    #         suppliers=elem['suppliers']
-    #     )
-    #     product.save()
-    # print("PURCHASE\n")
-    # for elem in data['purchases']:
-    #     purchase = Purchase(
-    #         products=elem['products'],
-    #         customer=elem['customer'],
-    #         purchase_price=elem['purchase_price'],
-    #         purchase_date=elem['purchase_date'],
-    #         shipping_address=elem['shipping_address'],
-    #         shipping_coordinates=get_coordinates_as_dict(elem['shipping_address'])
-    #     )
-    #     purchase.save()
-    # print("SUPPLIER\n")
-    # for elem in data['suppliers']:
-    #     supplier = Supplier(
-    #         name=elem['name'],
-    #         warehouse_addresses=elem['warehouse_addresses'],
-    #         warehouse_coordinates=get_coordinates_as_dict(elem['warehouse_addresses'])
-    #     )
-    #     supplier.save()
+            name=elem['name'],
+            billing_addresses=elem['billing_addresses'],
+            coordinates_billing_adresses = getLocationPoint(elem['billing_addresses']),
+            registration_date=elem['registration_date'],
+            shipping_addresses=elem['shipping_addresses'],
+            coordinates_shipping_adresses = getLocationPoint(elem['shipping_addresses']),
+            payment_cards=elem['payment_cards'],
+            last_access_date=elem['last_access_date']
+        )
+        customer.save()
+    
+    for elem in data['products']:
+        product = Product(
+            name=elem['name'],
+            supplier_product_code=elem['supplier_product_code'],
+            price_without_vat=elem['price_without_vat'],
+            price_with_vat=elem['price_with_vat'],
+            shipping_cost=elem['shipping_cost'],
+            discount_date_range=elem['discount_date_range'],
+            dimensions=elem['dimensions'],
+            weight=elem['weight'],
+            suppliers=elem['suppliers']
+        )
+        product.save()
+    
+    for elem in data['purchases']:
+        purchase = Purchase(
+            products=elem['products'],
+            customer=elem['customer'],
+            purchase_price=elem['purchase_price'],
+            purchase_date=elem['purchase_date'],
+            shipping_address=elem['shipping_address'],
+            shipping_coordinates=getLocationPoint(elem['shipping_address'])
+        )
+        purchase.save()
+
+    for elem in data['suppliers']:
+        supplier = Supplier(
+            name=elem['name'],
+            warehouse_addresses=elem['warehouse_addresses'],
+            warehouse_coordinates=getLocationPoint(elem['warehouse_addresses'])
+        )
+        supplier.save()
    
 
-    # # Export all collections
-    # export_collection_to_json(Customer.db, "customer.json")
-    # export_collection_to_json(Product.db, "product.json")
-    # export_collection_to_json(Purchase.db, "purchase.json")
-    # export_collection_to_json(Supplier.db, "supplier.json")
+    # Export all collections
+    export_collection_to_json(Customer.db, "customer.json")
+    export_collection_to_json(Product.db, "product.json")
+    export_collection_to_json(Purchase.db, "purchase.json")
+    export_collection_to_json(Supplier.db, "supplier.json")
     
-    # # Tests for each model
+    # Tests for each model
 
-    # # Test for Customer model
-    # print("\n==== Customer Test ====")
+    # Test for Customer model
+    print("\n==== Customer Test ====")
     customer = Customer(
         name="Tony Stark", 
         billing_addresses="1600 Pennsylvania Ave NW, Washington, DC 20500, USA",
         registration_date="2010-05-02", 
-        coordinates_billing_adresses=get_coordinates_as_dict("1600 Pennsylvania Ave NW, Washington, DC 20500, USA"), 
+        coordinates_billing_adresses=getLocationPoint("1600 Pennsylvania Ave NW, Washington, DC 20500, USA"), 
         payment_cards="4111111111111111",
         last_access_date="2024-10-01"
     )
     customer.save()
-    # print(f"Created Customer: {customer.name}, Billing Address: {customer.billing_addresses}")
+    print(f"Created Customer: {customer.name}, Billing Address: {customer.billing_addresses}")
 
-    # # Update and verify
-    # address_billing = "United Nations Secretariat Building, 405 E 42nd St, New York, NY 10017, USA"
-    # customer.billing_addresses = address_billing
-    # customer.coordinates_billing_adresses = get_coordinates_as_dict(customer.billing_addresses)
-    # customer.save()
-    # print(f"Updated Billing Address: {customer.billing_addresses}")
+    # Update and verify
+    address_billing = "United Nations Secretariat Building, 405 E 42nd St, New York, NY 10017, USA"
+    customer.billing_addresses = address_billing
+    customer.coordinates_billing_adresses = getLocationPoint(customer.billing_addresses)
+    customer.save()
+    print(f"Updated Billing Address: {customer.billing_addresses}")
 
-    # # Attempt to add invalid field
-    # try:
-    #     customer.age = 54
-    # except ValueError as e:
-    #     print(f"Error: {e}")
-
-
-    # # Test for Product model
-    # print("\n==== Product Test ====")
-    # product = Product(
-    #     name="Iron Man Suit", 
-    #     supplier_product_code="IMSUIT001", 
-    #     price_without_vat=1000000, 
-    #     price_with_vat=1210000, 
-    #     shipping_cost=500, 
-    #     discount_date_range={
-    #             "start_date": "2024-01-01",
-    #             "end_date": "2024-12-31"
-    #         },
-    #     dimensions={
-    #             "length": 180,
-    #             "width": 70,
-    #             "height": 30
-    #         }, 
-    #     weight=95,
-    #     suppliers="Stark Industries"
-    # )
-    # product.save()
-    # print(f"Created Product: {product.name}, Price with VAT: {product.price_with_vat}")
-
-    # # Обновление и проверка
-    # product.price_with_vat = 1250000
-    # product.save()
-    # print(f"Updated Price with VAT: {product.price_with_vat}")
-
-    # # Attempt to add invalid field
-    # try:
-    #     product.status = "Verified"
-    # except ValueError as e:
-    #     print(f"Error: {e}")
-
-    # # Test for Purchase model
-    # print("\n==== Purchase Test ====")
-    # purchase = Purchase(
-    #     products=["Smartphone", "Tablet",  "Smart Speaker"], 
-    #     customer="Tony Stark", 
-    #     purchase_price=282.50, 
-    #     purchase_date="2024-10-01",
-    # )
-    # purchase.save()
-    # print(f"Created Purchase: {purchase.products}, Customer: {purchase.customer}, Purchase Price: {purchase.purchase_price}")
-
-    # # Update and verify
-    # purchase.purchase_price = 300.00
-    # purchase.save()
-    # print(f"Updated Purchase Price: {purchase.purchase_price}")
-
-    # # Attempt to add invalid field
-    # try:
-    #     purchase.status = "Verified"
-    # except ValueError as e:
-    #     print(f"Error: {e}")
+    # Attempt to add invalid field
+    try:
+        customer.age = 54
+    except ValueError as e:
+        print(f"Error: {e}")
 
 
-    # # Test for Supplier model
-    # print("\n==== Supplier Test ====")
+    # Test for Product model
+    print("\n==== Product Test ====")
+    product = Product(
+        name="Iron Man Suit", 
+        supplier_product_code="IMSUIT001", 
+        price_without_vat=1000000, 
+        price_with_vat=1210000, 
+        shipping_cost=500, 
+        discount_date_range={
+                "start_date": "2024-01-01",
+                "end_date": "2024-12-31"
+            },
+        dimensions={
+                "length": 180,
+                "width": 70,
+                "height": 30
+            }, 
+        weight=95,
+        suppliers="Stark Industries"
+    )
+    product.save()
+    print(f"Created Product: {product.name}, Price with VAT: {product.price_with_vat}")
+
+    # Обновление и проверка
+    product.price_with_vat = 1250000
+    product.save()
+    print(f"Updated Price with VAT: {product.price_with_vat}")
+
+    # Attempt to add invalid field
+    try:
+        product.status = "Verified"
+    except ValueError as e:
+        print(f"Error: {e}")
+
+    # Test for Purchase model
+    print("\n==== Purchase Test ====")
+    purchase = Purchase(
+        products=["Smartphone", "Tablet",  "Smart Speaker"], 
+        customer="Tony Stark", 
+        purchase_price=282.50, 
+        purchase_date="2024-10-01",
+    )
+    purchase.save()
+    print(f"Created Purchase: {purchase.products}, Customer: {purchase.customer}, Purchase Price: {purchase.purchase_price}")
+
+    # Update and verify
+    purchase.purchase_price = 300.00
+    purchase.save()
+    print(f"Updated Purchase Price: {purchase.purchase_price}")
+
+    # Attempt to add invalid field
+    try:
+        purchase.status = "Verified"
+    except ValueError as e:
+        print(f"Error: {e}")
+
+
+    # Test for Supplier model
+    print("\n==== Supplier Test ====")
     
-    # supplier = Supplier(
-    #     name="Avengers Inc.", 
-    #     warehouse_addresses="701 D St NW, Washington, DC 20024, USA",
-    #     warehouse_coordinates=get_coordinates_as_dict("701 D St NW, Washington, DC 20024, USA")
-    # )
-    # supplier.save()
-    # print(f"Created Supplier: {supplier.name}, Warehouse: {supplier.warehouse_addresses}")
+    supplier = Supplier(
+        name="Avengers Inc.", 
+        warehouse_addresses="701 D St NW, Washington, DC 20024, USA",
+        warehouse_coordinates=getLocationPoint("701 D St NW, Washington, DC 20024, USA")
+    )
+    supplier.save()
+    print(f"Created Supplier: {supplier.name}, Warehouse: {supplier.warehouse_addresses}")
 
-    # # Update and verify
+    # Update and verify
     
-    # supplier.warehouse_addresses = "401 Van Ness Ave, San Francisco, CA 94102, USA"
-    # supplier.warehouse_coordinates = get_coordinates_as_dict(supplier.warehouse_addresses)
-    # supplier.save()
-    # print(f"Updated Warehouse Address: {supplier.warehouse_addresses}")
+    supplier.warehouse_addresses = "401 Van Ness Ave, San Francisco, CA 94102, USA"
+    supplier.warehouse_coordinates = getLocationPoint(supplier.warehouse_addresses)
+    supplier.save()
+    print(f"Updated Warehouse Address: {supplier.warehouse_addresses}")
 
-    # # Attempt to add invalid field
-    # try:
-    #     supplier.owner = "Steve Rogers"
-    # except ValueError as e:
-    #     print(f"Error: {e}")
+    # Attempt to add invalid field
+    try:
+        supplier.owner = "Steve Rogers"
+    except ValueError as e:
+        print(f"Error: {e}")
 
 
  

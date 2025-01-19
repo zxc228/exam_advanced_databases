@@ -1,6 +1,6 @@
 [
     {
-        "_id": "6765432e157fdab37fbadf7c",
+        "_id": "678cf3dd7a7750b77cf5ee70",
         "products": [
             "Tablet",
             "Smartwatch",
@@ -21,7 +21,7 @@
         }
     },
     {
-        "_id": "67654331157fdab37fbadf7d",
+        "_id": "678cf3de7a7750b77cf5ee71",
         "products": [
             "Air Conditioner"
         ],
@@ -32,13 +32,13 @@
         "shipping_coordinates": {
             "type": "Point",
             "coordinates": [
-                -3.690588,
-                40.419787
+                -3.697957,
+                40.418376
             ]
         }
     },
     {
-        "_id": "67654332157fdab37fbadf7e",
+        "_id": "678cf3df7a7750b77cf5ee72",
         "products": [
             "Printer"
         ],
@@ -55,7 +55,7 @@
         }
     },
     {
-        "_id": "67654333157fdab37fbadf7f",
+        "_id": "678cf3e07a7750b77cf5ee73",
         "products": [
             "Headphones"
         ],
@@ -72,7 +72,7 @@
         }
     },
     {
-        "_id": "67654335157fdab37fbadf80",
+        "_id": "678cf3e17a7750b77cf5ee74",
         "products": [
             "Washing Machine",
             "Monitor"
@@ -84,13 +84,13 @@
         "shipping_coordinates": {
             "type": "Point",
             "coordinates": [
-                -3.693554,
-                40.41653
+                -3.693255,
+                40.414173
             ]
         }
     },
     {
-        "_id": "67654336157fdab37fbadf81",
+        "_id": "678cf3e27a7750b77cf5ee75",
         "products": [
             "Monitor",
             "TV",
@@ -111,7 +111,7 @@
         }
     },
     {
-        "_id": "67654339157fdab37fbadf82",
+        "_id": "678cf3e37a7750b77cf5ee76",
         "products": [
             "Microwave"
         ],
@@ -122,13 +122,13 @@
         "shipping_coordinates": {
             "type": "Point",
             "coordinates": [
-                -3.690588,
-                40.419787
+                -3.697957,
+                40.418376
             ]
         }
     },
     {
-        "_id": "6765433a157fdab37fbadf83",
+        "_id": "678cf3e47a7750b77cf5ee77",
         "products": [
             "Smart Speaker",
             "Air Conditioner",
@@ -143,13 +143,13 @@
         "shipping_coordinates": {
             "type": "Point",
             "coordinates": [
-                -3.70465,
-                40.416254
+                -3.704665,
+                40.416458
             ]
         }
     },
     {
-        "_id": "6765433f157fdab37fbadf84",
+        "_id": "678cf3e57a7750b77cf5ee78",
         "products": [
             "Washing Machine",
             "Smart Speaker"
@@ -167,7 +167,7 @@
         }
     },
     {
-        "_id": "67654340157fdab37fbadf85",
+        "_id": "678cf3e67a7750b77cf5ee79",
         "products": [
             "Smartphone",
             "Fridge",
@@ -182,13 +182,13 @@
         "shipping_coordinates": {
             "type": "Point",
             "coordinates": [
-                -3.693554,
-                40.41653
+                -3.693255,
+                40.414173
             ]
         }
     },
     {
-        "_id": "67654340157fdab37fbadf86",
+        "_id": "678cf3e77a7750b77cf5ee7a",
         "products": [
             "TV",
             "Smart Speaker",
@@ -209,7 +209,7 @@
         }
     },
     {
-        "_id": "67654343157fdab37fbadf87",
+        "_id": "678cf3e87a7750b77cf5ee7b",
         "products": [
             "Router",
             "TV"
@@ -227,7 +227,7 @@
         }
     },
     {
-        "_id": "67654344157fdab37fbadf88",
+        "_id": "678cf3e97a7750b77cf5ee7c",
         "products": [
             "Microwave",
             "Headphones",
@@ -240,13 +240,13 @@
         "shipping_coordinates": {
             "type": "Point",
             "coordinates": [
-                -77.017878,
-                38.877907
+                -77.017972,
+                38.877384
             ]
         }
     },
     {
-        "_id": "67654345157fdab37fbadf89",
+        "_id": "678cf3ea7a7750b77cf5ee7d",
         "products": [
             "TV",
             "Camera"
@@ -258,13 +258,13 @@
         "shipping_coordinates": {
             "type": "Point",
             "coordinates": [
-                -77.017878,
-                38.877907
+                -77.017972,
+                38.877384
             ]
         }
     },
     {
-        "_id": "67654347157fdab37fbadf8a",
+        "_id": "678cf3eb7a7750b77cf5ee7e",
         "products": [
             "Air Conditioner",
             "Monitor",
