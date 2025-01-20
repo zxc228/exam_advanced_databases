@@ -422,6 +422,11 @@ PUBLISH channel message
 ```
 ## Neo4J
 
+0. Все удалить
+    ```cypher
+    MATCH(n)
+    DETACH DELETE n;
+
 1. Создание узлов
     
     Команда: CREATE
